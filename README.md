@@ -1,20 +1,9 @@
-Here's the formatted README file for the provided R script implementing the Artificial Neural Network (ANN) on the Iris dataset:
+# Author
+Omar A. Hussein
 
-### README.md
-
-```markdown
 # Artificial Neural Network with Iris Dataset
 
 This repository contains an implementation of an Artificial Neural Network (ANN) in R using the Iris dataset. The ANN is built and trained using the `neuralnet` package. The project includes data visualization, preprocessing, model building, training, and evaluation with various hidden layer configurations.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Setup Instructions](#setup-instructions)
-- [Usage](#usage)
-- [Model Architecture](#model-architecture)
-- [Results](#results)
-- [Report](#report)
 
 ## Introduction
 
@@ -26,16 +15,14 @@ The goal of this project is to build and evaluate an Artificial Neural Network (
 
 - R (version 4.0 or higher)
 - RStudio (optional, but recommended)
-- Required R packages: `neuralnet`, `tidyverse`, `keras`, `tensorflow`
+- Required R packages: 'neuralnet', 'tidyverse', 'keras', 'tensorflow'
 
 ### Installation
 
 1. **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/yourusername/ann-iris.git
-   cd ann-iris
-   ```
+
+   git clone https://github.com/omarion3698/AnnInR.git
 
 2. **Install R and RStudio:**
 
@@ -46,25 +33,22 @@ The goal of this project is to build and evaluate an Artificial Neural Network (
 
    Open R or RStudio and run the following commands:
 
-   ```r
    install.packages(c("neuralnet", "keras", "tensorflow"), dependencies = TRUE)
    install.packages("tidyverse")
    library(neuralnet)
    library(tidyverse)
-   ```
+   
 
 4. **Install and configure TensorFlow:**
 
-   ```r
    library(tensorflow)
    install_tensorflow()
-   ```
 
 ## Usage
 
 1. **Open the R Markdown file:**
 
-   Open the `ann_iris.Rmd` file in RStudio.
+   Open the 'LabWeek13' file in RStudio on Posit website using this link: https://posit.cloud/spaces/533413/content/8484000.
 
 2. **Run the R Markdown file:**
 
@@ -99,12 +83,3 @@ A detailed report is generated at the end of the R Markdown file, providing insi
 ### Conclusion
 
 Increasing the complexity of a neural network by adding more hidden layers and neurons can enhance model performance, as evidenced by the highest accuracy achieved with a model containing 10 hidden layers. However, this improvement is not always guaranteed and heavily depends on the dataset's specific characteristics and the problem at hand. For instance, in model 4, despite increasing the hidden layers to 17, the accuracy decreased to 63.33%, illustrating that a more complex architecture does not necessarily lead to better performance and may even hinder it. Additionally, in terms of RAM consumption, the RAM gauge on the Posit website turned red, indicating that all available memory was consumed, highlighting the increased computational demands and resource constraints associated with overly complex models.
-
-## Acknowledgments
-
-- This project uses the `neuralnet` package for building and training the neural network.
-- The Iris dataset is used for training and evaluation.
-
-```
-
-Make sure to customize the repository URL and any other details as needed before using this README file. Additionally, include the `ann_iris.Rmd` file and any other necessary files in your repository for a complete project setup.
